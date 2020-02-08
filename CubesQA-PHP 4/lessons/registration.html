@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CubesQA | Naslovna</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/main.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <img src="../images/logo.png" alt="Cubes School Logo"/>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="container">
+                <a href="../index.php">Naslovna</a>
+                <a href="../students.html">Studenti</a>
+                <a href="../lessons.html">Lekcije</a>
+                <a href="../quiz.html">Kviz</a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <aside class="list">
+                <h1>Lekcije</h1>
+                <a href="internet.html">Uvod u Web</a>
+                <a href="long_page.html">HTML - dugačka stranica</a>
+                <a href="form_elements.html">Elementi Forme</a>
+                <a href="styled_form_elements.html">Stilizovani elementi forme</a>
+                <a href="login.html">Login</a>
+                <a href="registration.html">Registracija</a>
+            </aside>
+            <section>
+                <h1>Registracija za kurs</h1>
+                <form method="POST">
+                    <fieldset>
+                        <legend>Osnovni podaci</legend>
+                        <div>
+                            <label for="name">Ime</label><br>
+                            <input id="name" type="text" name="name" value="" placeholder="Petar" required>
+                        </div>
+                        <div>
+                            <label for="password">Šifra</label><br>
+                            <input id="password" type="password" name="password" value="" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label><br>
+                            <input id="email" type="email" name="email" value="" required placeholder="example@mail.com">
+                        </div>
+                        <div>
+                            <label>Telefon</label><br>
+                            <input type="tel" name="phone" value="" placeholder="+381 11 123 456">
+                        </div>
+                        <div>
+                            <label for="cv">CV</label><br>
+                            <input type="file" name="file" id="cv">
+                        </div>
+                        <div>
+                            <label for="message">Motivaciono pismo</label><br>
+                            <textarea id="message" name="message" placeholder="Poruka" autofocus="" rows="7" cols="50"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Željena oblast učenja</legend>
+
+                        <div>
+                            <h5>Selektujte oblasti u kojima imate predznanje</h5>
+                            <label>
+                                <input type="checkbox" name="previous_knowledge[]" value="html">HTML
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox" name="previous_knowledge[]" value="css">CSS
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox" name="previous_knowledge[]" value="database">Baze podataka
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox" name="previous_knowledge[]" value="selenium">Selenium
+                            </label>
+                        </div>
+
+
+                        <div>
+                            <h5>Šta želite da učite?</h5>
+                            <label>
+                                <input type="radio" name="wish" value="frontend">FrontEnd
+                            </label>
+                            <label>
+                                <input type="radio" name="wish" value="backend">BackEnd
+                            </label>
+                            <label>
+                                <input type="radio" name="wish" value="QA">QA
+                            </label>
+                        </div>
+                        <div>
+                            <button name="send" type="submit" value="yes">Pošalji</button>
+                            <button name="reset" type="reset" value="yes">Resetuj formu</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <h2>QA kurs 2019</h2>
+            <p>Cubes škola je mesto gde ćete napraviti Vaše prve korake u IT karijeri.</p>
+        </footer>
+
+    </body>
+</html>

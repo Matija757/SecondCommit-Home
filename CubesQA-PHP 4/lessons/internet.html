@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CubesQA | Naslovna</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/main.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <img src="../images/logo.png" alt="Cubes School Logo"/>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="container">
+                <a href="../index.php">Naslovna</a>
+                <a href="../students.html">Studenti</a>
+                <a href="../lessons.html">Lekcije</a>
+                <a href="../quiz.html">Kviz</a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <aside class="list">
+                <h1>Lekcije</h1>
+                <a href="internet.html">Uvod u Web</a>
+                <a href="long_page.html">HTML - dugačka stranica</a>
+                <a href="form_elements.html">Elementi Forme</a>
+                <a href="styled_form_elements.html">Stilizovani elementi forme</a>
+                <a href="login.html">Login</a>
+                <a href="registration.html">Registracija</a>
+            </aside>
+            <section>
+                <h1>Šta je to Internet</h1>
+
+                <p class="description">
+                    Internet je globalna računarska mreža. Internet obezbeđuje da udaljeni 
+                    računari međusobno komuniciraju.
+                </p>
+
+                <h2>IP Adresa</h2>
+
+                <p>
+                    Svaki računar na Internetu poseduje IP adresu koju obezbeđuje ISP i 
+                    koja ga jednoznačno određuje.   
+                </p>
+
+                <p class="important">
+                    Da bi komunicirali sa drugim računarom na Internetu neophodno je da 
+                    znate njegovu IP adresu.
+                </p>
+
+                <p class="important">
+                    IP adresa se predstavlja sa 4 broja u opsegu od 0 do 255 razdvojenim 
+                    tačkom, na primer: 194.9.94.86
+                </p>
+
+
+                <h2>Internet Domen</h2>
+
+                <p>
+                    Internet domen je tekstualna prezentacija IP adrese.
+                </p>
+                <p>
+                    IP adresa se teško piše i pamti, zato je neophodno da se ona označi 
+                    na čoveku privatljiv način za šta upravo služe domeni.
+                </p>
+                <p>
+                    Primer jednog domena: office.cubes.rs
+                </p>
+
+                <p>
+                    Domeni su organizovani hijerarhijski, domen office.cubes.rs je 
+                    poddomen domena cubes.rs.
+                    Domeni se registruju u sistemu imena domena eng. DNS - Domain Name System. 
+                    Informacija o jednom domenu se nalazi na računaru na Internetu koji 
+                    se naziva DNS server i koji pruža uslugu za razrešavanje IP adrese za 
+                    koju je jedan domen vezan.
+                </p>
+
+                <h1>Šta je to WWW</h1>
+
+                <p class="description">
+                    WWW je skraćenica od World Wide Web i predstavlja sistem međusobno 
+                    povezanog sadržaja (web sajtova) dostupnog na Internetu.
+                </p>
+
+                <p>Osnovni pojomovi u WWW su:</p>
+
+                <ul>
+                    <li>web sajt</li>
+                    <li>web browser</li>
+                    <li>web server</li>
+                    <li>HTTP</li>
+                    <li>HTML</li>
+                    <li>URL</li>
+                </ul>
+
+                <h2>2.1 Web sajt</h2>
+                <p>Web sajt predstavlja skup web sadržaja koji se nalaze na jednom domenu.</p>
+
+                <h2>2.2 Web browser</h2>
+                <p>
+                    Web browser predstavlja klijentski program pomoću kojeg se vrši pregled 
+                    različitog web sadržaja (web stranice, slike, video sadržaj).
+                </p>
+                <h2>2.3 Web server</h2>
+                <p>
+                    Web server je računar na Internetu na kome se fizički nalazi web sadržaj. Web browser komunicira sa web serverom i od njega dobija traženi sadržaj.
+                    Na jednom web serveru može se naziti sadržaj od više web sajtova tj. jedan web server može da "hostuje" više domena.
+                </p>
+
+                <h2 id="http">2.4 HTTP</h2>
+
+                <p>
+                    <strong>HTTP</strong> je protokol po kome komuniciraju <b>web browser</b>   (klijentski program) i <b>web server</b> (serverski program).
+                    HTTP je skraćenica od Hypertext Transfer Protocol.
+                </p>
+
+
+                <h2>2.5 HTML</h2>
+                <p>
+                    HTML je tip tekstualnog dokumenta u kome se nalaze instrukcije koje izvršava web browser pomoću kojih vrši prikaz web sadržaja.
+                    U HTML dokumentu se definiše struktura web stranice.
+                </p>
+
+                <h2>2.6 URL</h2>
+                <p>
+                    URL je skraćenica od <span class="important">Uniform resource locator.</span>
+                    URL predstavlja putanju do web sadržaja (fajla) na Internetu.
+                </p>
+
+                <h1>Korisni materijali</h1>
+
+                <h2>Šema komunikacije između web browsera i web servera</h2>
+                <img src="http://www3.ntu.edu.sg/home/ehchua/programming/howto/images/HTTP_RequestResponseMessages.png" alt="Šema komunikacije između web browsera i web servera" width="500"> 
+
+
+                <h2>Linkovi za ucenje</h2>
+
+                <ol>
+                    <li>
+                        <a href="http://www.w3schools.com/html/default.asp" target="_blank">W3Schools HTML tutorijal</a>
+                    </li>
+                    <li>
+                        <a href="http://www.w3schools.com/tags/default.asp" target="_blank">W3Schools HTML spisak tagova</a>
+                    </li>
+                    <li>
+                        <a href="http://www.w3schools.com/css/default.asp" target="_blank">W3Schools CSS tutorijal</a>
+                    </li>
+                    <li>
+                        <a href="http://www.w3schools.com/cssref/default.asp" target="_blank">W3Schools CSS spisak atributa</a>
+                    </li>
+                </ol>
+
+                <h2>3.3 Video</h2>
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9hIQjrMHTv4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/J8hzJxb0rpc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Dxcc6ycZ73M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <h2>QA kurs 2019</h2>
+            <p>Cubes škola je mesto gde ćete napraviti Vaše prve korake u IT karijeri.</p>
+        </footer>
+
+    </body>
+</html>

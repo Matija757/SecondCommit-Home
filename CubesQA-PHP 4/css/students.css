@@ -1,0 +1,111 @@
+/*
+* Students list
+*/
+#students-list {
+    border-collapse: collapse;
+}
+
+#students-list td,
+#students-list th {
+    padding: 5px;
+}
+
+#students-list thead th {
+    border-top: 4px double tomato;
+}
+
+#students-list tbody tr {
+    border-bottom: 1px solid black;
+}
+
+#students-list tbody tr:last-of-type {
+    border-bottom: 4px double tomato;
+}
+
+#students-list tbody tr:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+table {
+    margin-bottom: 50px;
+}
+
+/*
+* Sitting order 
+*/
+#t1 {
+    border-collapse: collapse;
+}
+#t1 td {
+    padding: 20px 10px;
+    text-align: center;
+    border: 1px solid #aaa;
+}
+
+#t2 {
+    border-collapse: collapse;
+}
+#t2 td {
+    padding: 20px 10px;
+    text-align: center;
+    border: 1px solid #aaa;
+}
+
+#t3 {
+    border-collapse: collapse;
+}
+#t3 td {
+    padding: 20px 10px;
+    text-align: center;
+    border: 1px solid #aaa;
+}
+#t3 .space {
+    border-top: 0;
+    border-bottom: 0;
+}
+
+#t3 .no-seat {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+#sitting-order {
+    border-collapse: collapse;
+}
+
+#sitting-order td {
+    padding: 20px 10px;
+    text-align: center;
+    border: 1px solid #aaa;
+}
+
+#sitting-order tbody tr:nth-of-type(even) td:nth-child(odd),
+#sitting-order tbody tr:nth-of-type(odd) td:nth-child(even) {
+    background-color: bisque;
+}
+
+#sitting-order tbody tr td:nth-of-type(3), 
+#sitting-order tbody tr td:nth-of-type(6) {
+    border-top: 0;
+    border-bottom: 0;
+    background-color: #e6faff !important;
+}
+
+#sitting-order tfoot tr td {
+    border: 0;
+    border-top: 5px solid;
+}
+#sitting-order tfoot tr td:nth-of-type(4) {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    background-color: antiquewhite !important;
+}
+
+#sitting-order tfoot tr td:nth-of-type(3),
+#sitting-order tfoot tr td:nth-of-type(5) {
+    border-top: 0;
+}

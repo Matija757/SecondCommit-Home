@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CubesQA | Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/main.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/forms.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <img src="../images/logo.png" alt="Cubes School Logo"/>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="container">
+                <a href="../index.php">Naslovna</a>
+                <a href="../students.html">Studenti</a>
+                <a href="../lessons.html">Lekcije</a>
+                <a href="../quiz.html">Kviz</a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <aside class="list">
+                <h1>Lekcije</h1>
+                <a href="internet.html">Uvod u Web</a>
+                <a href="long_page.html">HTML - dugačka stranica</a>
+                <a href="form_elements.html">Elementi Forme</a>
+                <a href="styled_form_elements.html">Stilizovani elementi forme</a>
+                <a href="login.html">Login</a>
+                <a href="registration.html">Registracija</a>
+            </aside>
+            <section>
+                <h1>Moj opis: </h1>
+                <span id="statistics"></span>
+
+                <script type="text/javascript">
+
+                    // Definisanim varijablama dodeliti vrednosti koje se odnose na vas.
+                    // Krajnja poruka treba da bude u sledećem formatu: 
+                    // Milomir Dragović je osoba muškog pola i on je nadprosečno visoka osoba.
+                    //
+                    // U ispitivanju se u obzir uzimaju pol i visina.
+                    // Uslovi za visinu ako je pol muški:
+                    // Ako je viši od 190 onda je nadprosečno visok,
+                    // ako je između 170 i 190 onda je prosečno visok,
+                    // a ako je niži od 170 onda je nizak.
+                    //
+                    // Uslovi za visinu ako je poz ženski:
+                    // Ako je viša od 180 onda je nadprosečno visoka,
+                    // ako je između 155 i 180 onda je prosečno visoka,
+                    // a ako je niža od 155 onda je niska.
+
+                    // Krajnju statistiku ispisati u elementu koji ima id 'statistics'
+                    // Primeri:
+                    // P1: Nikola Tesla je osoba muškog pola i on je nadprosečno visoka osoba.
+                    // P2: Nikola Tesla je osoba muškog pola i on je prosečno visoka osoba.
+                    // P3: Milena Ajnštajn je osoba ženskog pola i ona je prosečno visoka osoba.
+
+
+
+
+                    /************************************
+                     VAŠ KOD IDE ISPOD
+                     *************************************/
+
+                    let name = 'Milomir';  //string
+                    let surname = 'Dragović'; //string
+                    let gender = 'M'; //string M ili Z
+                    let height = 177; // number vidth decimals
+                    let statistika = name + " " + surname; //prazan string
+                    let statistics = "";
+
+                    if (gender === 'M') {
+                        if (height > 190) {
+                            statistics = statistika + (' je osoba muškog pola i on je nadprosečno visoka osoba.');
+                        } else if (height > 170) {
+                            statistics = statistika + (' je osoba muškog pola i on je prosečno visoka osoba.');
+                        } else {
+                            statistics = statistika + (' je osoba muškog pola i on niska osoba.');
+                        }
+                    } else {
+                        if (height > 180) {
+                            statistics = statistika + (' je osoba ženskog pola i ona je nadprosečno visoka osoba.');
+                        } else if (height > 155) {
+                            statistics = statistika + (' je osoba ženskog pola i ona je prosečno visoka osoba.');
+                        } else {
+                            statistics = statistika + (' je osoba ženskog pola i ona niska osoba.');
+                        }
+                    }
+
+                    document.getElementById("statistics").innerHTML = statistics;
+
+                </script>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <h2>QA kurs 2019</h2>
+            <p>Cubes škola je mesto gde ćete napraviti Vaše prve korake u IT karijeri.</p>
+        </footer>
+
+    </body>
+</html>

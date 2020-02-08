@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CubesQA | Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/main.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/forms.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <img src="../images/logo.png" alt="Cubes School Logo"/>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="container">
+                <a href="../index.php">Naslovna</a>
+                <a href="../students.html">Studenti</a>
+                <a href="../lessons.html">Lekcije</a>
+                <a href="../quiz.html">Kviz</a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <aside class="list">
+                <h1>Lekcije</h1>
+                <a href="internet.html">Uvod u Web</a>
+                <a href="long_page.html">HTML - dugačka stranica</a>
+                <a href="form_elements.html">Elementi Forme</a>
+                <a href="styled_form_elements.html">Stilizovani elementi forme</a>
+                <a href="login.html">Login</a>
+                <a href="registration.html">Registracija</a>
+            </aside>
+            <section>
+                <h2>Izračunavanje površine:</h2>
+                <div>
+                    <label>Pravougaonik širina:</label>
+                    <input type="text" id="rec-width" value="0">
+                </div>
+
+                <div>
+                    <label>Pravougaonik dužina:</label>
+                    <input type="text" id="rec-height" value="0">
+                </div>
+
+                <div>
+                    <label>Kvadrat širina:</label>
+                    <input type="text" id="square-width" value="0">
+                </div>
+
+                <div>
+                    <label>Poluprečnik kruga:</label>
+                    <input type="text" id="circle" value="0">
+                </div>
+
+                <div>
+                    <button type="button" onclick="showTotalSurface();">Izračunaj!</button>
+                </div>
+
+                <script>
+
+                    /**
+                     * Calculates surface of rectangle
+                     * @param {type} a
+                     * @param {type} b
+                     * @returns {Number}
+                     */
+                    function rectangleSurface(a, b) {
+                        return a * b;
+                    }
+
+                    function squareSurface(a) {
+                        return a * a;
+                    }
+
+                    function circleSurface(a) {
+                        return a * a * 3.14;
+                    }
+
+                    function totalSurface() {
+                        let rectangle_a = document.getElementById("rec-width").value;
+                        let rectangle_b = document.getElementById("rec-height").value;
+                        let square = document.getElementById("square-width").value;
+                        let circle = document.getElementById("circle").value;
+
+                        let total = rectangleSurface(rectangle_a, rectangle_b) + squareSurface(square) + circleSurface(circle);
+                        return total;
+                    }
+
+                    function showTotalSurface() {
+                        alert(totalSurface());
+                    }
+
+                </script>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <h2>QA kurs 2019</h2>
+            <p>Cubes škola je mesto gde ćete napraviti Vaše prve korake u IT karijeri.</p>
+        </footer>
+
+    </body>
+</html>

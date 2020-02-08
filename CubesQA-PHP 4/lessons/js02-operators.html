@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CubesQA | Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/main.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/forms.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <img src="../images/logo.png" alt="Cubes School Logo"/>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="container">
+                <a href="../index.php">Naslovna</a>
+                <a href="../students.html">Studenti</a>
+                <a href="../lessons.html">Lekcije</a>
+                <a href="../quiz.html">Kviz</a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <aside class="list">
+                <h1>Lekcije</h1>
+                <a href="internet.html">Uvod u Web</a>
+                <a href="long_page.html">HTML - dugačka stranica</a>
+                <a href="form_elements.html">Elementi Forme</a>
+                <a href="styled_form_elements.html">Stilizovani elementi forme</a>
+                <a href="login.html">Login</a>
+                <a href="registration.html">Registracija</a>
+            </aside>
+            <section>
+                <h1>Primeri su zabeleženi u Console-i.</h1>
+                <h2>Resursi: <a href="https://www.w3schools.com/js/js_comparisons.asp" target="_blank">JS Comparisons</a></h2>
+
+                <script type="text/javascript">
+
+                    console.log("----- 01 -----");
+                    var x = 15;
+                    var y = 10;
+                    var str = '15';
+
+                    console.log("x: " + x);
+                    console.log("y: " + y);
+                    console.log("str: " + str);
+
+
+                    console.log("----- 02 -----");
+                    // + , - , * , / , %
+                    var z;
+                    z = x * str;
+                    console.log("Broj(x) puta string(str): " + z);
+
+                    z = x + y;
+                    console.log("Broj(x) plus string(str): " + z);
+
+                    z = str + x + y;
+                    console.log("String + broj + broj: " + z);
+
+
+                    console.log("----- 03 -----");
+                    // >, >=, <, <=
+                    z = x > y;
+                    console.log("Da li je x veće od y: " + z);
+                    z = x < y;
+                    console.log("Da li je x manje od y: " + z);
+
+
+                    console.log("----- 04 -----");
+                    // ==, ===, !=, !==
+                    console.log("x==str: " + (x == str));
+                    console.log("x===str: " + (x === str));
+
+                    console.log("x != str: " + (x != str));
+                    console.log("x !== str: " + (x !== str));
+
+                    x = '15';
+                    console.log("x==str: " + (x == str));
+                    console.log("x===str: " + (x === str));
+
+                    z = x != str;
+                    console.log("x != str: " + z);
+                    z = x !== str;
+                    console.log("x !== str: " + z);
+
+                    var firstNumber = 20;
+                    var secondNumber = '20';
+
+                    console.log(firstNumber === secondNumber);
+
+
+                    console.log("----- 05 -----");
+                    // += , -=, *=, /=
+                    x /= 5;
+                    console.log("x / 5: " + x);
+                    x -= 15;
+                    console.log("x -= 5: " + x);
+
+
+                    console.log("----- 06 -----");
+                    //&& , ||
+                    x = 15;
+                    y = 10;
+                    str = '15';
+                    console.log("x === str && x > y: " + (x === str && x > y));
+
+                </script>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <h2>QA kurs 2019</h2>
+            <p>Cubes škola je mesto gde ćete napraviti Vaše prve korake u IT karijeri.</p>
+        </footer>
+
+    </body>
+</html>

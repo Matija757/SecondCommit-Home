@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CubesQA | Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/main.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/forms.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <img src="../images/logo.png" alt="Cubes School Logo"/>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="container">
+                <a href="../index.php">Naslovna</a>
+                <a href="../students.html">Studenti</a>
+                <a href="../lessons.html">Lekcije</a>
+                <a href="../quiz.html">Kviz</a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <aside class="list">
+                <h1>Lekcije</h1>
+                <a href="internet.html">Uvod u Web</a>
+                <a href="long_page.html">HTML - dugačka stranica</a>
+                <a href="form_elements.html">Elementi Forme</a>
+                <a href="styled_form_elements.html">Stilizovani elementi forme</a>
+                <a href="login.html">Login</a>
+                <a href="registration.html">Registracija</a>
+            </aside>
+            <section>
+                <h1>Vežba</h1>
+                <p>
+                    BIOGRAFIJA: <br>
+                    <span id="biography"></span>
+                </p>
+
+                <script type="text/javascript">
+
+                    //Definisanim varijablama dodeliti vrednosti.
+                    //Ispitati godine i u odnosu na njih ispisati "ime osobe" + "prezime" + "poruka(je punoletan/je maloletan)".
+                    //Ispitati zaposlenje i u odnosu na to na prethodnu poruku dodati da je "ime" + "zaposlen u Cubes / nije zaposlen"
+                    //Ispitati visinu. U zavisnosti od visine na prethodnu poruku dodati da je  
+                    //"ime " + visok(>1.9), prosečne visine (>1.7 <=1.9) ili nizak (<=1.7)
+
+                    // Krajnju biografiju ispisati u elementu koji ima id biography
+
+                    let name = 'Nikola';  //string
+                    let surname = "Tesla"; //string
+                    let age = 32; //number
+                    let height = 195; // number
+                    let employed = true;  //boolean
+                    let biography = '';   // empty string
+
+                    /************************************
+                     VAŠ KOD IDE ISPOD
+                     *************************************/
+
+                    if (age >= 18) {
+                        biography = biography + 'Osoba ' + name + " " + surname + " je punoletna. \n";
+                    } else {
+                        biography = biography + 'Osoba ' + name + " " + surname + " je maloletna. \n";
+                    }
+
+                    console.log("Biografija 1: \n" + biography);
+
+
+                    let full_name = name + ' ' + surname;
+
+                    if (employed === true) {
+                        biography += full_name + " je zaposlen(a). \n";
+                    } else {
+                        biography += full_name + " nije zaposlen(a). \n";
+                    }
+
+                    console.log("Biografija 2: \n" + biography);
+
+
+                    if (height > 190) {
+                        biography += name + " je nadprosečno visok(a). \n";
+                    } else if (height > 170 && height <= 190) {
+                        biography += name + " je prosečno visok. \n";
+                    } else {
+                        biography += name + " je nizak. \n";
+                    }
+
+                    console.log("Biografija 3: \n" + biography);
+
+                    document.getElementById('biography').innerText = biography;
+
+                </script>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <h2>QA kurs 2019</h2>
+            <p>Cubes škola je mesto gde ćete napraviti Vaše prve korake u IT karijeri.</p>
+        </footer>
+
+    </body>
+</html>

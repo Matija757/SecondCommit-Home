@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CubesQA | Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/main.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/forms.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <img src="../images/logo.png" alt="Cubes School Logo"/>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="container">
+                <a href="../index.php">Naslovna</a>
+                <a href="../students.html">Studenti</a>
+                <a href="../lessons.html">Lekcije</a>
+                <a href="../quiz.html">Kviz</a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <aside class="list">
+                <h1>Lekcije</h1>
+                <a href="internet.html">Uvod u Web</a>
+                <a href="long_page.html">HTML - dugačka stranica</a>
+                <a href="form_elements.html">Elementi Forme</a>
+                <a href="styled_form_elements.html">Stilizovani elementi forme</a>
+                <a href="login.html">Login</a>
+                <a href="registration.html">Registracija</a>
+            </aside>
+            <section>
+                <button onclick="displayMessage();">Prikaži poruku</button>
+
+                <button onclick="displayWarrning();">Prikaži Upozorenje</button>
+
+                <button onclick="displayDanger();">Prikaži Opasnost</button>
+
+                <br>
+                <hr>
+               
+                <div>
+                    <input type="text" id="message" placeholder="Enter message text">
+                    <button onclick="getValue('message')">Pokupi vrednost</button>
+                    <button type="button" onclick="clearMessageBox()">Clear</button>
+                </div>
+
+
+                <button onclick="addUp(19, 22);">Prikaži zbir 9 + 22</button>
+
+
+                <div id="messages">
+
+                </div>
+
+                <script type="text/javascript">
+
+                    let welcome = 'Dobro došli!';
+                    let warning = 'Upozorenje!';
+                    let danger = 'Opasnost!';
+
+                    function displayMessage() {
+                        alert(welcome);
+                    }
+
+                    function displayWarrning() {
+                        alert(warning);
+                    }
+
+                    function displayDanger() {
+                        alert(danger);
+                    }
+
+                    function addUp(a, b) {
+                        alert(a + b);
+                    }
+
+                    function getValue(id) {
+                        alert(document.getElementById(id).value);
+                    }
+
+                    function clearMessageBox() {
+                        document.getElementById("message").value = "";
+                    }
+
+                </script>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <h2>QA kurs 2019</h2>
+            <p>Cubes škola je mesto gde ćete napraviti Vaše prve korake u IT karijeri.</p>
+        </footer>
+
+    </body>
+</html>

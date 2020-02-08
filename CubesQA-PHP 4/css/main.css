@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Ubuntu, Arial;
+    margin: 0;
+    background-color: #e6faff;
+}
+
+/* Header */
+header {
+    padding: 40px;
+    text-align: center;
+    background: #fff;
+    color: #17b9e6;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+/* Style the navigation bar */
+nav {
+    display: flex;
+    background-color: #17b9e6;
+}
+
+/* Style the navigation bar links */
+nav a {
+    font-size: 22px;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Change color on hover */
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+aside {
+    flex: 30%;
+    padding: 30px;
+    background-color: #f1f1f1;
+
+}
+section {
+    flex: 70%;
+    padding: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+section img {
+    width: 100%;
+}
+
+section p {
+    line-height: 30px;
+}
+
+section .group {
+    /*display:inline-block;*/
+    padding: 10px 20px;
+    width: 80%;
+    border: 0.5px solid #ddd;
+    vertical-align: top;
+    margin: 10px;
+}
+
+section .group h2 {
+    margin: 3px;
+}
+
+
+/* Skill */
+.skill {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    height:60px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Lessons list */
+.list a {
+    display: block;
+    padding: 6px;
+    margin-bottom: 5px;
+}
+
+.list a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #a7a7a7;
+    color: #f1f1f1;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row, .navbar {   
+        flex-direction: column;
+    }
+}
+
+.content ul {
+    padding-left: 0px;
+    width: 100%;
+}
+
+.content li {
+    padding: 5px;
+}
+.content ul > li {
+    list-style: none;
+}
+
+.content ul li ol li:hover {
+    background-color: blue;
+}
+
+
+ /*Login page*/ 
+
+.login-form {
+    width: 400px;
+}
+
+.login-form fieldset {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.login-form label {
+    padding: 10px 0;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+.login-form button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form[name=job-apply]  {
+    border: 1px solid blue;
+    border-radius: 4px;
+    padding: 30px;
+    width: 700px;
+}
+
+form[name=job-apply] label {
+    display: inline-block;
+    text-align: left;
+    width: 150px;
+    margin: 10px 0;
+}
+
+form[name=job-apply] input[type=reset] {
+    background-color: grey;    
+}
+
+form[name=job-apply] .center {
+    text-align: center;
+}
+
+form[name=job-apply] .error {
+    color: red;
+}
+
+form[name=job-apply] span {
+    /*display: block;*/
+}
+
+.button {
+  align-content: center;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#boxForm {
+    padding: 16px;
+    border: 2px;
+    border-color: #17b9e6;
+    border-style: dashed;
+}
+
+ol li {
+    list-style-type: upper-alpha;
+    list-style-position: inside;
+}
+
+#submitQuiz{
+    display: flex;
+    float: none;
+    background-color:lightblue;
+    border-radius: 5px;
+    border: none;
+    color:white;
+    padding: 10px 30px;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+#submitQuiz:hover{
+  background-color: #4CAF50;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+list p b{
+    list-style-type: georgian;
+}
+

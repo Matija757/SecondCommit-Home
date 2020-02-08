@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CubesQA</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/main.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/forms.css" rel="stylesheet" type="text/css"/>
+        <style>
+            .container {
+                width: 1000px;
+                margin: 0 auto;
+            }
+
+            #box {
+                width: 200px;
+                height: 200px;
+                border:5px solid#000;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <img src="../images/logo.png" alt="Cubes School Logo"/>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="container">
+                <a href="../index.php">Naslovna</a>
+                <a href="../students.html">Studenti</a>
+                <a href="../lessons.html">Lekcije</a>
+                <a href="../quiz.html">Kviz</a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <aside class="list">
+                <h1>Lekcije</h1>
+                <a href="internet.html">Uvod u Web</a>
+                <a href="long_page.html">HTML - dugačka stranica</a>
+                <a href="form_elements.html">Elementi Forme</a>
+                <a href="styled_form_elements.html">Stilizovani elementi forme</a>
+                <a href="login.html">Login</a>
+                <a href="registration.html">Registracija</a>
+            </aside>
+            <section>
+                <button onclick="document.getElementById('box').style.background = 'red'">Promeni pozadinu u crveno</button>            
+                <button onclick="document.getElementById('box').style.background = 'blue'">Postavi plavu pozadinu</button>
+                <button onclick="document.getElementById('box').style.background = 'white'">Poništi pozadinsku boju</button>
+                <button onclick="document.getElementById('box').style.marginLeft = '100px'">Pomeri u desno</button>
+                <button onclick="document.getElementById('box').style.display = 'none'">Sakrij</button>
+                <button onclick="document.getElementById('box').style.display = 'block'">Prikaži2</button>
+                <button id="show">Prikaži</button>
+
+                <h1>Ispod je box:</h1>
+                <div id="box">
+
+                </div>
+
+                <hr>
+
+                <input id="message" name="message" value="" onkeyup="document.getElementById('wrapper').innerText = document.getElementById('message').value">
+                <p id="message-box">PORUKA JE: <span id="wrapper"></span></p>
+                <hr>
+
+                <select id="city" onchange="document.getElementById('city-box').innerText = document.getElementById('city').value">
+                    <option value="">---</option>
+                    <option value="bgd">Beograd</option>
+                    <option value="sub">Subotica</option>
+                    <option value="nis">Niš</option>
+                </select>
+                <p>Vrednost izabranog grada</p>
+                <p id="city-box"></p>
+
+                <script>
+                    document.getElementById('show').addEventListener('click', function () {
+                        document.getElementById('box').style.display = 'block';
+                    });
+                </script>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <h2>QA kurs 2019</h2>
+            <p>Cubes škola je mesto gde ćete napraviti Vaše prve korake u IT karijeri.</p>
+        </footer>
+
+    </body>
+</html>

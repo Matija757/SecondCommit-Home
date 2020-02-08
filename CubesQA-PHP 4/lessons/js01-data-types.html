@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CubesQA | Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/main.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/forms.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <img src="../images/logo.png" alt="Cubes School Logo"/>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="container">
+                <a href="../index.php">Naslovna</a>
+                <a href="../students.html">Studenti</a>
+                <a href="../lessons.html">Lekcije</a>
+                <a href="../quiz.html">Kviz</a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <aside class="list">
+                <h1>Lekcije</h1>
+                <a href="internet.html">Uvod u Web</a>
+                <a href="long_page.html">HTML - dugačka stranica</a>
+                <a href="form_elements.html">Elementi Forme</a>
+                <a href="styled_form_elements.html">Stilizovani elementi forme</a>
+                <a href="login.html">Login</a>
+                <a href="registration.html">Registracija</a>
+            </aside>
+            <section>
+                <h1 id="total-time">Tipovi podataka</h1>
+                <h2>Resursi: <a href="https://www.w3schools.com/js/js_datatypes.asp" target="_blank">JS Data Types</a></h2>
+
+                <script type="text/javascript">
+
+                    //1. STRING
+                    let first_name = 'Milomir';
+                    let last_name = 'Dragović';
+                    let role = 'Predavač';
+                    let course = 'QA';
+
+                    //2. NUMBERS
+                    let year = 2017;
+                    let pi = 3.14;
+                    let phone_number = 061123456;
+
+                    //3. ARRAY
+                    let myCar = 'Audi';
+                    let familyCar = 'Volvo';
+
+
+                    let arrayExample = ['firstElement', 'secondElement', 'thirdElement'];
+                    let cars = ["Saab", "Volvo", "BMW"];
+
+                    let familyCars = [
+                        'Audi',
+                        'Volvo',
+                        'Ford',
+                        'BMW',
+                        5
+                    ];
+
+                    //4. BOOLEAN
+                    let teacher = true;
+                    let student = false;
+
+                    //5. OBJECT
+                    let qaTeacher = {
+                        name: 'Milomir',
+                        surname: 'Dragović',
+                        height: 190,
+                        weight: 90
+                    };
+
+                    let x = {firstName: "Nikola", lastName: "Tesla"};
+
+                    //6. UNDEFINED
+                    let room;
+                    //alert(room);
+                    room = 'soba 23';
+                    //alert(room);
+
+                    //7. NULL
+                    let project = null;
+                    //alert(project);
+
+                    //8. NaN
+                    let distance = 100;
+                    let speed = distance / document.getElementById('total-time').value;
+                    //alert(speed);
+
+                </script>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <h2>QA kurs 2019</h2>
+            <p>Cubes škola je mesto gde ćete napraviti Vaše prve korake u IT karijeri.</p>
+        </footer>
+
+    </body>
+</html>
